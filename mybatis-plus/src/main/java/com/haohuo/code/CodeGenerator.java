@@ -17,6 +17,7 @@ import java.util.Scanner;
  * 2019年1月2日
  * 控制台输入相应模块以及实体，Controller，service等名称，自动生成代码
  */
+@Deprecated
 public class CodeGenerator {
 
     /**

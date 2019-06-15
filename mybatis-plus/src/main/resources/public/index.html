@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<script src="../jquery.min.js"></script>
+<body>
+<table border="1px">
+    <thead>
+        <tr>
+            <td>userId         </td>
+            <td>username       </td>
+            <td>password       </td>
+            <td>deptId         </td>
+            <td>email          </td>
+            <td>mobile         </td>
+            <td>status         </td>
+            <td>crateTime      </td>
+            <td>modifyTime     </td>
+            <td>lastLoginTime  </td>
+            <td>ssex           </td>
+            <td>theme          </td>
+            <td>avatar         </td>
+            <td>description    </td>
+        </tr>
+    </thead>
+    <tbody id="body">
+    </tbody>
+</table>
+<script>
+    $(function(){
+        $.ajax({
+            url:'http://localhost:8080/user/getByWhere',
+            type:'post',
+            dataType:'json',
+            success:function(data){
+                data = eval(data);
+                var body = '';
+                for (var i=0; i<data.length; i++) {
+                    var datum = eval(data[i]);
+                    body = body +   "<tr>" +
+                        "<td>"+data[i].userId          +"</td>"+
+                        "<td>"+data[i].username        +"</td>"+
+                        "<td>"+data[i].password        +"</td>"+
+                        "<td>"+data[i].deptId          +"</td>"+
+                        "<td>"+data[i].email           +"</td>"+
+                        "<td>"+data[i].mobile          +"</td>"+
+                        "<td>"+data[i].status          +"</td>"+
+                        "<td>"+data[i].crateTime       +"</td>"+
+                        "<td>"+data[i].modifyTime      +"</td>"+
+                        "<td>"+data[i].lastLoginTime   +"</td>"+
+                        "<td>"+data[i].ssex            +"</td>"+
+                        "<td>"+data[i].theme           +"</td>"+
+                        "<td>"+data[i].avatar          +"</td>"+
+                        "<td>"+data[i].description     +"</td>"+
+                        "</tr>"
+                }
+                $('#body').html(body);
+            }
+        })
+
+    })
+</script>
+</body>
+</html>

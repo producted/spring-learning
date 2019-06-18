@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    url: jdbc:mysql://dev.51haohuo.net:3306/test_zpk?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: hc
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG

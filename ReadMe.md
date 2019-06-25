@@ -3,9 +3,14 @@
 
 ## 目录
 
-[springboot+mybatis plus 代码生成，crud示例](https://github.com/producted/spring-learning/tree/master/mybatis-plus)  
-[github 三方登录示例](https://github.com/producted/spring-learning/tree/master/login-third)  
+[springboot+mybatis plus+swagger2 代码生成，crud示例](https://github.com/producted/spring-learning/tree/master/mybatis-plus)  
+[github 三方登录示例，附带一个resttemplate工具](https://github.com/producted/spring-learning/tree/master/login-third)  
 [springboot+spring-security 入门级示例](https://github.com/producted/spring-learning/tree/master/spring-security)  
 [springboot+mybatis+druid 多数据源配置](https://github.com/producted/spring-learning/tree/master/mybatis-multi-datasource)  
+[QR code 利用Google zxing实现二维码生成](https://github.com/producted/spring-learning/tree/master/qr-code)  
 
 所有注释都在代码里，开箱即用。
+
+## My Blog
+
+![my blog](https://github.com/producted/resource/blob/master/images/qr-code.jpg)

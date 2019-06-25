@@ -1,5 +1,6 @@
 package com.zhangpk.config;
 
+import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -20,12 +21,14 @@ public class DataSourceConfig {
     @Bean(name = "dbOne")
     @ConfigurationProperties(prefix = "spring.datasource.db-one")
     public DataSource dsOne(){
-        return DataSourceBuilder.create().build();
+        // 此方法是不适用druid连接池的数据源构建
+        /*return DataSourceBuilder.create().build();*/
+        return DruidDataSourceBuilder.create().build();
     }
 
     @Bean(name = "dbTwo")
     @ConfigurationProperties(prefix = "spring.datasource.db-two")
     public DataSource dsTwo(){
-        return DataSourceBuilder.create().build();
+        return DruidDataSourceBuilder.create().build();
     }
 }

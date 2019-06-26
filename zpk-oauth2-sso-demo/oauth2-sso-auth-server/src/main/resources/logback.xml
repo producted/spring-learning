@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" >
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <Target>System.out</Target>
+        <encoder>
+            <pattern>%d [%t] %p %logger - %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+    </appender>
+    <appender name="LogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>./logs/sso-server.log</File>
+        <Append>true</Append>
+        <encoder>
+            <pattern>%d [%t] %p %logger{0} - %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>./logs/sso_server_%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <appender name="ErrorFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>./logs/sso_server_error.log</File>
+        <encoder>
+            <pattern>%d [%t] %p %logger{0} - %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>./logs/sso_server_error_%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <appender name="RequestResponeFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>./logs/sso_server_RequestResponeFile.log</File>
+        <encoder>
+            <pattern>%d [%t] %p %logger{0} - %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>./logs/sso_server_RequestResponeFile_%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <appender name="ImageIdentificationFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>./logs/ImageIdentificationFile.log</File>
+        <encoder>
+            <pattern>%d [%t] %p %logger{0} - %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>./logs/ImageIdentificationFile_%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <logger name="com.zhangpk.service.MyUserDetailsService" level="DEBUG">
+        <appender-ref ref="LogFile"/>
+    </logger>
+
+    <logger name="com.zhangpk" level="DEBUG">
+        <appender-ref ref="LogFile"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="Console"/>
+        <appender-ref ref="LogFile"/>
+        <appender-ref ref="ErrorFile"/>
+    </root>
+</configuration>

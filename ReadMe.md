@@ -9,6 +9,7 @@
 * [springboot+mybatis+druid 多数据源配置](https://github.com/producted/spring-learning/tree/master/mybatis-multi-datasource)  
 * [QR code 利用Google zxing实现二维码生成](https://github.com/producted/spring-learning/tree/master/qr-code)  
 * [springboot+oauth2 实现单点登录](https://github.com/producted/spring-learning/tree/master/zpk-oauth2-sso-demo)
+* [springboot+quartz 实现动态定时任务调度](https://github.com/producted/spring-learning/tree/master/scheduler)
 
 所有注释都在代码里，开箱即用。
 

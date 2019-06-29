@@ -6,11 +6,15 @@ import com.zhangpk.bean.Job;
 import com.zhangpk.bean.QueryRequest;
 import com.zhangpk.bean.ResponseBo;
 import com.zhangpk.service.JobService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.quartz.CronExpression;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -19,6 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
+@Api(tags = "任务调用相关接口")
 public class JobController  {
 
     private Logger log = LoggerFactory.getLogger(this.getClass());
@@ -26,13 +31,14 @@ public class JobController  {
     @Autowired
     private JobService jobService;
 
-    @RequestMapping("job")
+    @GetMapping("job")
     public String index() {
         return "job/job/job";
     }
 
-    @RequestMapping("job/list")
+    @PostMapping("job/list")
     @ResponseBody
+    @ApiOperation(value = "查询任务列表")
     public Map<String, Object> jobList(QueryRequest request, Job job) {
         PageHelper.startPage(request.getPageNum(), request.getPageSize());
         List<Job> list = this.jobService.findAllJobs(job);
@@ -47,8 +53,9 @@ public class JobController  {
         return rspData;
     }
 
-    @RequestMapping("job/checkCron")
+    @GetMapping("job/checkCron")
     @ResponseBody
+    @ApiOperation(value = "检测cron表达式")
     public boolean checkCron(String cron) {
         try {
             return CronExpression.isValidExpression(cron);
@@ -57,8 +64,9 @@ public class JobController  {
         }
     }
 
-    @RequestMapping("job/add")
+    @PostMapping("job/add")
     @ResponseBody
+    @ApiOperation(value = "创建/新增任务")
     public ResponseBo addJob(Job job) {
         try {
             this.jobService.addJob(job);
@@ -69,8 +77,9 @@ public class JobController  {
         }
     }
 
-    @RequestMapping("job/delete")
+    @GetMapping("job/delete")
     @ResponseBody
+    @ApiOperation(value = "删除任务")
     public ResponseBo deleteJob(String ids) {
         try {
             this.jobService.deleteBatch(ids);
@@ -81,8 +90,9 @@ public class JobController  {
         }
     }
 
-    @RequestMapping("job/getJob")
+    @GetMapping("job/getJob")
     @ResponseBody
+    @ApiOperation(value = "根据Id获取任务")
     public ResponseBo getJob(Long jobId) {
         try {
             Job job = this.jobService.findJob(jobId);
@@ -93,8 +103,9 @@ public class JobController  {
         }
     }
 
-    @RequestMapping("job/update")
+    @PostMapping("job/update")
     @ResponseBody
+    @ApiOperation(value = "修改任务表")
     public ResponseBo updateJob(Job job) {
         try {
             this.jobService.updateJob(job);
@@ -105,8 +116,9 @@ public class JobController  {
         }
     }
 
-    @RequestMapping("job/run")
+    @GetMapping("job/run")
     @ResponseBody
+    @ApiOperation(value = "立即执行一次任务")
     public ResponseBo runJob(String jobIds) {
         try {
             this.jobService.run(jobIds);
@@ -117,8 +129,9 @@ public class JobController  {
         }
     }
 
-    @RequestMapping("job/pause")
+    @GetMapping("job/pause")
     @ResponseBody
+    @ApiOperation(value = "暂停任务")
     public ResponseBo pauseJob(String jobIds) {
         try {
             this.jobService.pause(jobIds);
@@ -129,8 +142,9 @@ public class JobController  {
         }
     }
 
-    @RequestMapping("job/resume")
+    @GetMapping("job/resume")
     @ResponseBody
+    @ApiOperation(value = "恢复任务")
     public ResponseBo resumeJob(String jobIds) {
         try {
             this.jobService.resume(jobIds);

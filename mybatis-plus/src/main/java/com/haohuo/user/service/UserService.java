@@ -5,8 +5,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.haohuo.user.bean.UserModel;
 
 import java.util.List;
-import java.util.Map;
-
 /**
  * <p>
  * 服务类
@@ -17,6 +15,12 @@ import java.util.Map;
  */
 public interface UserService extends IService<UserModel> {
 
-
+    /**
+     * find data by something
+     *
+     * @param page page number
+     * @param userModel
+     * @return List<UserModel>
+     */
     List<UserModel> getByWhere(Page<UserModel> page, UserModel userModel);
 }

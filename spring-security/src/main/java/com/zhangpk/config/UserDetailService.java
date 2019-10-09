@@ -15,9 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * 自定义UserDetailsService，spring security认识的这个bean，在websecurityconfig内注入
- *
+ * <p>
  * Created By zhangpk On 2019/6/17
  **/
 @Service

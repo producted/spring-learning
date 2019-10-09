@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/login-third/login-third.iml" filepath="$PROJECT_DIR$/login-third/login-third.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-dynamic-database/mybatis-dynamic-database.iml" filepath="$PROJECT_DIR$/mybatis-dynamic-database/mybatis-dynamic-database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-multi-datasource/mybatis-multi-datasource.iml" filepath="$PROJECT_DIR$/mybatis-multi-datasource/mybatis-multi-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zpk-oauth2-sso-demo/oauth2-sso-auth-server/oauth2-sso-auth-server.iml" filepath="$PROJECT_DIR$/zpk-oauth2-sso-demo/oauth2-sso-auth-server/oauth2-sso-auth-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zpk-oauth2-sso-demo/oauth2-sso-client-member/oauth2-sso-client-member.iml" filepath="$PROJECT_DIR$/zpk-oauth2-sso-demo/oauth2-sso-client-member/oauth2-sso-client-member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zpk-oauth2-sso-demo/oauth2-sso-client-order/oauth2-sso-client-order.iml" filepath="$PROJECT_DIR$/zpk-oauth2-sso-demo/oauth2-sso-client-order/oauth2-sso-client-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qr-code/qr-code.iml" filepath="$PROJECT_DIR$/qr-code/qr-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scheduler/quartz/quartz.iml" filepath="$PROJECT_DIR$/scheduler/quartz/quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scheduler/scheduler.iml" filepath="$PROJECT_DIR$/scheduler/scheduler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-learning.iml" filepath="$PROJECT_DIR$/.idea/spring-learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zpk-oauth2-sso-demo/zpk-oauth2-sso-demo.iml" filepath="$PROJECT_DIR$/zpk-oauth2-sso-demo/zpk-oauth2-sso-demo.iml" />
+    </modules>
+  </component>
+</project>

@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
         userRepository.save(userDO);
     }
 
-    private void setPassword(UserDO userDO){
+    private void setPassword(UserDO userDO) {
         String passCode = new BCryptPasswordEncoder().encode(userDO.getPassword());
         userDO.setPassword(passCode);
     }

@@ -1,18 +1,18 @@
-# spring ÏµÍ³Ñ§Ï°¼ÇÂ¼
+# spring ç³»ç»Ÿå­¦ä¹ è®°å½•
 
 
-## Ä¿Â¼
+## ç›®å½•
 
-* [springboot+mybatis plus+swagger2 ´úÂëÉú³É£¬crudÊ¾Àı](https://github.com/producted/spring-learning/tree/master/mybatis-plus)  
-* [github Èı·½µÇÂ¼Ê¾Àı£¬¸½´øÒ»¸öresttemplate¹¤¾ß](https://github.com/producted/spring-learning/tree/master/login-third)  
-* [springboot+spring-security ÈëÃÅ¼¶Ê¾Àı](https://github.com/producted/spring-learning/tree/master/spring-security)  
-* [springboot+mybatis+druid ¶àÊı¾İÔ´ÅäÖÃ](https://github.com/producted/spring-learning/tree/master/mybatis-multi-datasource)  
-* [QR code ÀûÓÃGoogle zxingÊµÏÖ¶şÎ¬ÂëÉú³É](https://github.com/producted/spring-learning/tree/master/qr-code)  
-* [springboot+oauth2 ÊµÏÖµ¥µãµÇÂ¼](https://github.com/producted/spring-learning/tree/master/zpk-oauth2-sso-demo)
-* [springboot+quartz+swagger2 ÊµÏÖ¶¯Ì¬¶¨Ê±ÈÎÎñµ÷¶È](https://github.com/producted/spring-learning/tree/master/scheduler)
+* [springboot+mybatis plus+swagger2 ä»£ç ç”Ÿæˆï¼Œcrudç¤ºä¾‹](https://github.com/producted/spring-learning/tree/master/mybatis-plus)  
+* [github ä¸‰æ–¹ç™»å½•ç¤ºä¾‹ï¼Œé™„å¸¦ä¸€ä¸ªresttemplateå·¥å…·](https://github.com/producted/spring-learning/tree/master/login-third)  
+* [springboot+spring-security å…¥é—¨çº§ç¤ºä¾‹](https://github.com/producted/spring-learning/tree/master/spring-security)  
+* [springboot+mybatis+druid å¤šæ•°æ®æºé…ç½®](https://github.com/producted/spring-learning/tree/master/mybatis-multi-datasource)  
+* [QR code åˆ©ç”¨Google zxingå®ç°äºŒç»´ç ç”Ÿæˆ](https://github.com/producted/spring-learning/tree/master/qr-code)  
+* [springboot+oauth2 å®ç°å•ç‚¹ç™»å½•](https://github.com/producted/spring-learning/tree/master/zpk-oauth2-sso-demo)
+* [springboot+quartz+swagger2 å®ç°åŠ¨æ€å®šæ—¶ä»»åŠ¡è°ƒåº¦](https://github.com/producted/spring-learning/tree/master/scheduler)
 
-ËùÓĞ×¢ÊÍ¶¼ÔÚ´úÂëÀï£¬¿ªÏä¼´ÓÃ¡£
+æ‰€æœ‰æ³¨é‡Šéƒ½åœ¨ä»£ç é‡Œï¼Œå¼€ç®±å³ç”¨ã€‚
 
-## My Blog
+## My Blog...
 
 [https://uacoding.cn](https://uacoding.cn)

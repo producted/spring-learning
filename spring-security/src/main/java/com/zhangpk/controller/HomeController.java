@@ -14,22 +14,22 @@ public class HomeController {
     private final UserService userService;
 
     @GetMapping({"/", "/index", "/home"})
-    public String root(){
+    public String root() {
         return "index";
     }
 
     @GetMapping("/login")
-    public String login(){
+    public String login() {
         return "login";
     }
 
     @GetMapping("/register")
-    public String register(){
+    public String register() {
         return "register";
     }
 
     @PostMapping("/register")
-    public String doRegister(UserDO userDO){
+    public String doRegister(UserDO userDO) {
         // 此处省略校验逻辑
         userService.insert(userDO);
         return "redirect:register?success";

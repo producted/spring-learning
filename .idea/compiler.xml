@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="login-third" />
+        <module name="mybatis-dynamic-database" />
+        <module name="mybatis-multi-datasource" />
+        <module name="oauth2-sso-auth-server" />
+        <module name="oauth2-sso-client-member" />
+        <module name="oauth2-sso-client-order" />
+        <module name="qr-code" />
+        <module name="quartz" />
+        <module name="scheduler" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="login-third" target="1.8" />
+      <module name="mybatis-dynamic-database" target="1.8" />
+      <module name="mybatis-multi-datasource" target="1.8" />
+      <module name="oauth2-sso-auth-server" target="1.8" />
+      <module name="oauth2-sso-client-member" target="1.8" />
+      <module name="oauth2-sso-client-order" target="1.8" />
+      <module name="qr-code" target="1.8" />
+      <module name="quartz" target="1.8" />
+      <module name="scheduler" target="1.8" />
+      <module name="zpk-oauth2-sso-demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
